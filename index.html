@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farel Ridholi Vios | F&B & Cinematic TikTok Specialist</title>
+    <meta name="description" content="Portofolio Farel Ridholi Vios - TikTok Content Creator, Cafe Promoter & Cinematic Video Specialist berbasis di Bandar Lampung.">
+    
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* Light Theme Colors (Warm Cafe & Amber Sunset Theme) */
+            --bg-primary: #ffffff;
+            --bg-secondary: #fefaf6; /* Warm cream */
+            --text-primary: #1e1b18; /* Dark brown grey */
+            --text-secondary: #57534e; /* Stone 600 */
+            --accent-color: #ea580c; /* Orange 600 - Aesthetic Amber */
+            --accent-hover: #c2410c; /* Orange 700 */
+            --border-color: #f5eae0;
+            --card-bg: #ffffff;
+            --shadow-sm: 0 1px 2px 0 rgba(120, 53, 4, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(120, 53, 4, 0.08), 0 2px 4px -1px rgba(120, 53, 4, 0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(120, 53, 4, 0.1), 0 4px 6px -2px rgba(120, 53, 4, 0.05);
+            
+            /* Typography */
+            --font-main: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Theme Colors (Cinematic Dark Theme) */
+            --bg-primary: #1c1917; /* Stone 900 */
+            --bg-secondary: #292524; /* Stone 800 */
+            --text-primary: #fafaf9;
+            --text-secondary: #a8a29e; /* Stone 400 */
+            --accent-color: #fb923c; /* Orange 400 - Warm Glow */
+            --accent-hover: #fdba74; /* Orange 300 */
+            --border-color: #44403c;
+            --card-bg: #292524;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+            font-family: var(--font-main);
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            border: 2px solid var(--accent-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--bg-primary);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .theme-toggle, .hamburger {
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .theme-toggle:hover, .hamburger:hover {
+            color: var(--accent-color);
+        }
+
+        .lang-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.4rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-toggle:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            transform: translateY(-1px);
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-links {
+                position: absolute;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--bg-primary);
+                flex-direction: column;
+                padding: 2rem 0;
+                gap: 1.5rem;
+                box-shadow: var(--shadow-md);
+                transition: left 0.3s ease;
+            }
+            .nav-links.active {
+                left: 0;
+            }
+        }
+
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: var(--bg-secondary);
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text h2 {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-text p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+            max-width: 500px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .hero-img-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid var(--bg-primary);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-img {
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            max-height: 450px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .about-text p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        #skills {
+            background-color: var(--bg-secondary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .skill-item {
+            background-color: var(--card-bg);
+            padding: 2.5rem 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .skill-item i {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-item h4 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-item p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-info h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .project-info p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        #experience {
+            background-color: var(--bg-secondary);
+        }
+
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 2rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: var(--bg-primary);
+            border: 4px solid var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .timeline-content {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .timeline-content h3 {
+            margin-bottom: 0.25rem;
+        }
+        
+        .timeline-content h4 {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-item i {
+            color: var(--accent-color);
+            font-size: 1.25rem;
+            width: 24px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.2);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-message {
+            display: none;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        .form-message.success {
+            display: block;
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+        }
+        .form-message.error {
+            display: block;
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+        }
+
+        /* Scroll Animation Utility Classes */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Video Modal Fixes */
+        .video-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.88);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            cursor: pointer;
+        }
+
+        .video-modal.active {
+            display: flex;
+        }
+
+        .close-modal-btn {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            font-size: 1.5rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .close-modal-btn:hover {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .phone-mockup {
+            width: 320px;
+            height: 640px;
+            background-color: #000;
+            border: 12px solid #2d2d30;
+            border-radius: 36px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            cursor: default;
+        }
+
+        .phone-notch {
+            width: 140px;
+            height: 18px;
+            background-color: #2d2d30;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 10;
+        }
+
+        .phone-screen {
+            flex-grow: 1;
+            position: relative;
+            background-color: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2.5rem 1rem 1rem;
+            font-family: var(--font-main);
+        }
+
+        /* Simulated Video Feed */
+        .simulated-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .simulated-video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* TikTok Floating Buttons (Sidebar) */
+        .tiktok-sidebar {
+            position: absolute;
+            right: 10px;
+            bottom: 110px;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            align-items: center;
+        }
+
+        .tiktok-icon-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2rem;
+            font-size: 0.75rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tiktok-icon-btn i {
+            font-size: 1.5rem;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+        }
+
+        .tiktok-icon-btn.liked i {
+            color: #ef4444;
+        }
+
+        /* Sound Control Overlay */
+        .tiktok-sound-btn {
+            position: absolute;
+            top: 40px;
+            right: 15px;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.5);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            transition: background 0.2s;
+        }
+
+        .tiktok-sound-btn:hover {
+            background: rgba(234, 88, 12, 0.8);
+        }
+
+        .tiktok-profile-pic {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background-color: var(--accent-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.75rem;
+            color: white;
+            position: relative;
+        }
+
+        .tiktok-profile-pic::after {
+            content: '+';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ef4444;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .tiktok-bottom-info {
+            position: absolute;
+            left: 12px;
+            bottom: 20px;
+            right: 70px;
+            z-index: 5;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            pointer-events: none;
+        }
+
+        .tiktok-username {
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .tiktok-description {
+            font-size: 0.8rem;
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+            color: #f3f4f6;
+        }
+
+        .tiktok-music {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            color: #e5e7eb;
+        }
+
+        .tiktok-music i {
+            animation: rotateDisk 4s linear infinite;
+        }
+
+        @keyframes rotateDisk {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .tiktok-progress-bar {
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            height: 3px;
+            background-color: #ef4444;
+            transition: width 0.1s linear;
+            z-index: 5;
+        }
+
+        /* Play/Pause Center Indicator Alert Overlay */
+        .play-indicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.5);
+            background: rgba(0,0,0,0.6);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, transform 0.2s;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .play-indicator.trigger {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        @media (max-width: 1024px) {
+            .hero-text h1 { font-size: 2.8rem; }
+            .hero-img { width: 300px; height: 300px; }
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 4rem 0; }
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+            .hero-text p { margin: 0 auto 2rem; }
+            .hero-cta { justify-content: center; }
+            .about-content, .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .about-img { max-width: 300px; margin: 0 auto; }
+            .timeline { padding-left: 1rem; }
+            .timeline-item::before { left: -21px; width: 16px; height: 16px; }
+            .close-modal-btn { top: 15px; right: 15px; width: 42px; height: 42px; font-size: 1.25rem; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 { font-size: 2.3rem; }
+            .hero-img { width: 250px; height: 250px; }
+            .hero-cta { flex-direction: column; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .phone-mockup { width: 280px; height: 560px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Farel<span>.vios</span></a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Switch Language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="lang-code">ID</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container hero-content">
+                <div class="hero-text fade-up">
+                    <span class="hero-badge" data-i18n="hero-badge" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: var(--card-bg); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 9999px; font-weight: 500; font-size: 0.95rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-sm);">
+                        👋 Halo! Saya Farel Ridholi Vios
+                    </span>
+                    <h1 data-i18n="hero-title">Creative Content Creator & <span style="color: var(--accent-color);">TikTok Specialist</span></h1>
+                    <p data-i18n="hero-desc">Saya seorang pembuat konten berusia 19 tahun yang berdomisili di <strong>Bandar Lampung</strong>. Berfokus pada visualisasi estetik untuk kafe & bisnis F&B serta video sinematik otomotif yang dikemas menarik dan dinamis.</p>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary);">
+                        <span><i class="fa-solid fa-location-dot" style="color: var(--accent-color); margin-right: 0.4rem;"></i> Bandar Lampung</span>
+                        <span><i class="fa-solid fa-mug-hot" style="color: var(--accent-color); margin-right: 0.4rem;"></i> F&B & Cafe Specialist</span>
+                        <span><i class="fa-solid fa-clapperboard" style="color: var(--accent-color); margin-right: 0.4rem;"></i> Cinematic Video</span>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#about" class="btn btn-primary" data-i18n="hero-btn-about">Kenal Lebih Dekat</a>
+                        <a href="#projects" class="btn btn-outline" data-i18n="hero-btn-projects">Lihat Karya Saya</a>
+                    </div>
+                </div>
+                <div class="hero-img-container fade-up" style="transition-delay: 0.2s;">
+                    <img src="WhatsApp Image 2026-07-16 at 20.47.33.jpeg" alt="Farel Ridholi Vios" class="hero-img" onerror="this.src='https://placehold.co/350x350/ea580c/ffffff?text=Farel+Ridholi+Vios'">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title fade-up" data-i18n="about-title">Tentang Saya</h2>
+                <div class="about-content">
+                    <div class="fade-up">
+                        <img src="WhatsApp Image 2026-07-16 at 20.47.33 (1).jpeg" alt="Farel Ridholi Vios sedang beraktivitas" class="about-img" onerror="this.src='https://placehold.co/300x450/1e1b18/ffffff?text=Farel+Vios+Creative'">
+                    </div>
+                    <div class="about-text fade-up" style="transition-delay: 0.2s;">
+                        <h3>Farel Ridholi Vios</h3>
+                        <h4 style="color: var(--accent-color); margin-bottom: 1rem;" data-i18n="about-subtitle">19 Years Old | F&B Creator & Cinematic Video Specialist based in Bandar Lampung</h4>
+                        <p data-i18n="about-p1">Halo! Saya Farel. Saya memiliki ketertarikan mendalam di dunia penjelajahan kuliner (<em>food hunting</em>), merancang konsep video kafe yang hangat, sekaligus menangkap momen berenergi tinggi dari kumpulan anak motor lewat visual sinematik.</p>
+                        <p data-i18n="about-p2">Bagi saya, media sosial adalah panggung untuk bercerita. Baik itu suasana kafe kopi yang estetik dan menenangkan, atau deru mesin serta dinamisme malam hari bersama komunitas motor, semuanya dikemas dalam transisi video yang halus, musik yang memikat, dan sudut pandang visual yang unik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title fade-up" data-i18n="skills-title">Keahlian Utama</h2>
+                <div class="skills-grid">
+                    <div class="skill-item fade-up">
+                        <i class="fa-solid fa-video"></i>
+                        <h4 data-i18n="skill-1-title">TikTok Video Production</h4>
+                        <p data-i18n="skill-1-desc">Pengambilan video HP estetik, teknik transisi mulus, dan pengeditan CapCut tingkat lanjut.</p>
+                    </div>
+                    <div class="skill-item fade-up" style="transition-delay: 0.1s;">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <h4 data-i18n="skill-2-title">Cinematic Videography</h4>
+                        <p data-i18n="skill-2-desc">Teknik <em>speed ramping</em>, komposisi pencahayaan malam, serta visual sinematik khusus otomotif & motor.</p>
+                    </div>
+                    <div class="skill-item fade-up" style="transition-delay: 0.2s;">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                        <h4 data-i18n="skill-3-title">F&B Storytelling</h4>
+                        <p data-i18n="skill-3-desc">Penulisan naskah ulasan kuliner, pembawaan suara (<em>voiceover</em>) yang asyik, dan interaksi natural.</p>
+                    </div>
+                    <div class="skill-item fade-up" style="transition-delay: 0.3s;">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h4 data-i18n="skill-4-title">Cafe Promo Strategy</h4>
+                        <p data-i18n="skill-4-desc">Konsep program promosi kafe yang menarik audiens lokal untuk langsung berkunjung secara fisik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title fade-up" data-i18n="projects-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Proyek 1: Radz Coffee & Cakes Promotion -->
+                    <div class="project-card fade-up">
+                        <img src="https://placehold.co/600x400/1e1b18/ffffff?text=Radz+Coffee+Promo" alt="Radz Coffee Project Preview" class="project-img">
+                        <div class="project-info">
+                            <h3 data-i18n="proj-1-title">Radz Coffee & Cakes TikTok Campaign</h3>
+                            <div class="project-tags">
+                                <span class="tag">TikTok Strategy</span>
+                                <span class="tag">F&B Promotion</span>
+                                <span class="tag">Dynamic Transitions</span>
+                            </div>
+                            <p data-i18n="proj-1-desc">Video promosi kreatif untuk Radz Coffee & Cakes di Bandar Lampung. Menonjolkan perpaduan konsep 'Game or Coffee', pertunjukan musik akustik, menu makanan & kopi lezat, serta dekorasi cermin estetik bertema MS Paint menggunakan editing dinamis yang ramah FYP.</p>
+                            <div class="hero-cta" style="margin-top: auto; padding-top: 1rem;">
+                                <button onclick="openVideoModal('WhatsApp Video 2026-07-17 at 15.22.11.mp4', '@farel.vios', 'Nongkrong sekaligus mabar di Radz Coffee Bandar Lampung ☕️🎮 #RadzCoffee #CafeLampung #CinematicTikTok', '.Feast - Tarot', '1.5K', '89', '452', '120')" class="btn btn-primary" style="padding: 0.75rem 1rem; font-size: 0.95rem; width: 100%;" data-i18n="proj-1-btn">
+                                    <i class="fa-solid fa-play"></i> Watch Promo Video
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 2: Motorcycle Cinematic Series -->
+                    <div class="project-card fade-up" style="transition-delay: 0.2s;">
+                        <img src="https://placehold.co/600x400/1c1917/ffffff?text=Cinematic+Motorcycle" alt="Motorcycle Content Preview" class="project-img">
+                        <div class="project-info">
+                            <h3 data-i18n="proj-2-title">Rider Cinematic Series (Motorcycle Community)</h3>
+                            <div class="project-tags">
+                                <span class="tag">Automotive Cinematic</span>
+                                <span class="tag">Speed Ramp</span>
+                                <span class="tag">TikTok Trends</span>
+                            </div>
+                            <p data-i18n="proj-2-desc">Koleksi konten TikTok video sinematik khusus kumpulan anak motor di Lampung. Berfokus pada transisi cepat (<em>speed ramping</em>), pemilihan musik berenergi tinggi, dan sinematografi malam hari (<em>night rides</em>) yang berhasil membangun komunitas loyal.</p>
+                            <div class="hero-cta" style="margin-top: auto; padding-top: 1rem;">
+                                <button onclick="openVideoModal('WhatsApp Video 2026-07-17 at 15.40.48.mp4', '@farel.vios', 'Vibes malam minggu bareng squad sport bike Lampung 🔥🏍️ Senggol dong! #sportbike #cinematicmotor #zx25r #r15 #sunmori', '.Feast - Tarot', '4.2K', '245', '812', '340')" class="btn btn-primary" style="padding: 0.75rem 1rem; font-size: 0.95rem; width: 100%; background-color: var(--text-primary); border-color: var(--text-primary);" data-i18n="proj-2-btn">
+                                    <i class="fa-solid fa-play"></i> Watch Cinematic Video
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title fade-up" data-i18n="exp-title">Pengalaman & Edukasi</h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-date">2025 - 2026</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp-1-role">Lead Creative F&B Creator & TikTok Strategist</h3>
+                            <h4>Bandar Lampung</h4>
+                            <p data-i18n="exp-1-desc">Merancang konsep promosi video estetik, melakukan kunjungan (<em>cafe hopping</em>), merekam serta memproduksi konten ulasan berkualitas tinggi yang menarik minat ratusan pengikut lokal untuk berkunjung langsung.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-date">2025 - 2026</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp-2-role">Freelance Video Editor & Collaborator</h3>
+                            <h4>Bandar Lampung</h4>
+                            <p data-i18n="exp-2-desc">Berkolaborasi dengan komunitas motor dan pemilik bisnis lokal untuk memproses pengeditan video TikTok berkecepatan tinggi menggunakan CapCut, menyelaraskan ketukan musik (<em>beats matching</em>), serta mengoptimalkan video agar ramah algoritma FYP.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title fade-up" data-i18n="contact-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info fade-up">
+                        <h3 data-i18n="contact-subtitle">Mari Bekerja Sama!</h3>
+                        <p data-i18n="contact-desc">Ingin kafe Anda ramai dikunjungi anak muda, atau ingin komunitas motor Anda terlihat sangat keren dalam video sinematik TikTok yang viral? Silakan hubungi saya sekarang!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>ridholifios@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>089632139717</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Bandar Lampung, Indonesia</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container fade-up" style="transition-delay: 0.2s;">
+                        <form class="contact-form" id="contactForm">
+                            <div id="formMessage" class="form-message"></div>
+                            
+                            <div class="form-group">
+                                <label for="name" data-i18n="form-label-name">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" data-i18n-ph="form-ph-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-i18n="form-label-email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="name@email.com" data-i18n-ph="form-ph-email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-i18n="form-label-msg">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." data-i18n-ph="form-ph-msg" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="form-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Pemutar Video TikTok -->
+    <div id="videoModal" class="video-modal" onclick="closeVideoModalOnBackdrop(event)">
+        <button class="close-modal-btn" onclick="closeVideoModal()" aria-label="Close Video">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="phone-mockup" onclick="event.stopPropagation()">
+            <div class="phone-notch"></div>
+            
+            <div class="phone-screen">
+                <div class="simulated-video-container" onclick="togglePlayPause()">
+                    <video id="tiktokVideo" loop playsinline preload="auto">
+                        <source id="videoSource" src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div id="playIndicator" class="play-indicator">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                    <div class="tiktok-sound-btn" onclick="toggleSound(event)">
+                        <i class="fa-solid fa-volume-high" id="soundIcon"></i>
+                    </div>
+                </div>
+
+                <div class="tiktok-sidebar">
+                    <div class="tiktok-profile-pic">FV</div>
+                    
+                    <div class="tiktok-icon-btn" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="like-count" id="tiktokLikes">1.5K</span>
+                    </div>
+
+                    <div class="tiktok-icon-btn">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span id="tiktokComments">89</span>
+                    </div>
+
+                    <div class="tiktok-icon-btn">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span id="tiktokBookmarks">452</span>
+                    </div>
+
+                    <div class="tiktok-icon-btn">
+                        <i class="fa-solid fa-share"></i>
+                        <span id="tiktokShares">120</span>
+                    </div>
+                </div>
+
+                <div class="tiktok-bottom-info">
+                    <div class="tiktok-username" id="tiktokUsername">@farel.vios</div>
+                    <div class="tiktok-description" id="tiktokDesc">Content description goes here...</div>
+                    <div class="tiktok-music">
+                        <i class="fa-solid fa-music"></i>
+                        <span id="tiktokMusicText">.Feast - Tarot</span>
+                    </div>
+                </div>
+
+                <div class="tiktok-progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 2rem 0; color: var(--text-secondary);">
+            <p data-i18n="footer-text">&copy; 2026 Farel Ridholi Vios. Built with creativity & visual passion.</p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            id: {
+                'hero-badge': '👋 Halo! Saya Farel Ridholi Vios',
+                'hero-title': 'Creative Content Creator & <span style="color: var(--accent-color);">TikTok Specialist</span>',
+                'hero-desc': 'Saya seorang pembuat konten berusia 19 tahun yang berdomisili di <strong>Bandar Lampung</strong>. Berfokus pada visualisasi estetik untuk kafe & bisnis F&B serta video sinematik otomotif yang dikemas menarik dan dinamis.',
+                'hero-btn-about': 'Kenal Lebih Dekat',
+                'hero-btn-projects': 'Lihat Karya Saya',
+                'about-title': 'Tentang Saya',
+                'about-subtitle': '19 Years Old | F&B Creator & Cinematic Video Specialist based in Bandar Lampung',
+                'about-p1': 'Halo! Saya Farel. Saya memiliki ketertarikan mendalam di dunia penjelajahan kuliner (<em>food hunting</em>), merancang konsep video kafe yang hangat, sekaligus menangkap momen berenergi tinggi dari kumpulan anak motor lewat visual sinematik.',
+                'about-p2': 'Bagi saya, media sosial adalah panggung untuk bercerita. Baik itu suasana kafe kopi yang estetik dan menenangkan, atau deru mesin serta dinamisme malam hari bersama komunitas motor, semuanya dikemas dalam transisi video yang halus, musik yang memikat, dan sudut pandang visual yang unik.',
+                'skills-title': 'Keahlian Utama',
+                'skill-1-title': 'TikTok Video Production',
+                'skill-1-desc': 'Pengambilan video HP estetik, teknik transisi mulus, dan pengeditan CapCut tingkat lanjut.',
+                'skill-2-title': 'Cinematic Videography',
+                'skill-2-desc': 'Teknik <em>speed ramping</em>, komposisi pencahayaan malam, serta visual sinematik khusus otomotif & motor.',
+                'skill-3-title': 'F&B Storytelling',
+                'skill-3-desc': 'Penulisan naskah ulasan kuliner, pembawaan suara (<em>voiceover</em>) yang asyik, dan interaksi natural.',
+                'skill-4-title': 'Cafe Promo Strategy',
+                'skill-4-desc': 'Konsep program promosi kafe yang menarik audiens lokal untuk langsung berkunjung secara fisik.',
+                'projects-title': 'Featured Projects',
+                'proj-1-title': 'Radz Coffee & Cakes TikTok Campaign',
+                'proj-1-desc': 'Video promosi kreatif untuk Radz Coffee & Cakes di Bandar Lampung. Menonjolkan perpaduan konsep \'Game or Coffee\', pertunjukan musik akustik, menu makanan & kopi lezat, serta dekorasi cermin estetik bertema MS Paint menggunakan editing dinamis yang ramah FYP.',
+                'proj-1-btn': '<i class="fa-solid fa-play"></i> Watch Promo Video',
+                'proj-2-title': 'Rider Cinematic Series (Motorcycle Community)',
+                'proj-2-desc': 'Koleksi konten TikTok video sinematik khusus kumpulan anak motor di Lampung. Berfokus pada transisi cepat (<em>speed ramping</em>), pemilihan musik berenergi tinggi, dan sinematografi malam hari (<em>night rides</em>) yang berhasil membangun komunitas loyal.',
+                'proj-2-btn': '<i class="fa-solid fa-play"></i> Watch Cinematic Video',
+                'exp-title': 'Pengalaman & Edukasi',
+                'exp-1-role': 'Lead Creative F&B Creator & TikTok Strategist',
+                'exp-1-desc': 'Merancang konsep promosi video estetik, melakukan kunjungan (<em>cafe hopping</em>), merekam serta memproduksi konten ulasan berkualitas tinggi yang menarik minat ratusan pengikut lokal untuk berkunjung langsung.',
+                'exp-2-role': 'Freelance Video Editor & Collaborator',
+                'exp-2-desc': 'Berkolaborasi dengan komunitas motor dan pemilik bisnis lokal untuk memproses pengeditan video TikTok berkecepatan tinggi menggunakan CapCut, menyelaraskan ketukan musik (<em>beats matching</em>), serta mengoptimalkan video agar ramah algoritma FYP.',
+                'contact-title': 'Get In Touch',
+                'contact-subtitle': 'Mari Bekerja Sama!',
+                'contact-desc': 'Ingin kafe Anda ramai dikunjungi anak muda, atau ingin komunitas motor Anda terlihat sangat keren dalam video sinematik TikTok yang viral? Silakan hubungi saya sekarang!',
+                'form-label-name': 'Nama Lengkap',
+                'form-label-email': 'Alamat Email',
+                'form-label-msg': 'Pesan Anda',
+                'form-ph-name': 'Masukkan nama Anda',
+                'form-ph-email': 'nama@email.com',
+                'form-ph-msg': 'Tuliskan pesan Anda di sini...',
+                'form-btn': 'Kirim Pesan',
+                'footer-text': '&copy; 2026 Farel Ridholi Vios. Dibuat dengan kreativitas & passion visual.'
+            },
+            en: {
+                'hero-badge': '👋 Hi! I\'m Farel Ridholi Vios',
+                'hero-title': 'Creative Content Creator & <span style="color: var(--accent-color);">TikTok Specialist</span>',
+                'hero-desc': 'I am a 19-year-old content creator based in <strong>Bandar Lampung</strong>. Specializing in aesthetic visual concepts for cafes & F&B businesses, as well as high-energy cinematic automotive videos.',
+                'hero-btn-about': 'Get to Know Me',
+                'hero-btn-projects': 'View My Work',
+                'about-title': 'About Me',
+                'about-subtitle': '19 Years Old | F&B Creator & Cinematic Video Specialist based in Bandar Lampung',
+                'about-p1': 'Hello! I\'m Farel. I have a deep passion for culinary exploration (<em>food hunting</em>), designing cozy cafe video concepts, and capturing high-octane moments from motor riding communities through cinematic visuals.',
+                'about-p2': 'To me, social media is a storytelling stage. Whether it\'s the aesthetic, relaxing ambiance of a coffee shop or the roar of engines and night-ride dynamics with bike communities, everything is crafted with seamless transitions, engaging music, and unique visual angles.',
+                'skills-title': 'Core Skills',
+                'skill-1-title': 'TikTok Video Production',
+                'skill-1-desc': 'Aesthetic smartphone videography, smooth transition techniques, and advanced CapCut editing.',
+                'skill-2-title': 'Cinematic Videography',
+                'skill-2-desc': '<em>Speed ramping</em> techniques, night lighting compositions, and specialized automotive & bike cinematic visuals.',
+                'skill-3-title': 'F&B Storytelling',
+                'skill-3-desc': 'Culinary review scriptwriting, engaging voiceovers, and natural on-camera interactions.',
+                'skill-4-title': 'Cafe Promo Strategy',
+                'skill-4-desc': 'Creative promotional campaign concepts designed to drive local physical foot traffic to cafes.',
+                'projects-title': 'Featured Projects',
+                'proj-1-title': 'Radz Coffee & Cakes TikTok Campaign',
+                'proj-1-desc': 'Creative promotional video for Radz Coffee & Cakes in Bandar Lampung. Highlighting the \'Game or Coffee\' concept, live acoustic music, delicious food & coffee, and MS Paint-themed mirror aesthetic with FYP-optimized editing.',
+                'proj-1-btn': '<i class="fa-solid fa-play"></i> Watch Promo Video',
+                'proj-2-title': 'Rider Cinematic Series (Motorcycle Community)',
+                'proj-2-desc': 'A collection of cinematic TikTok videos for Lampung bike riding groups. Focused on fast-paced <em>speed ramping</em>, energetic soundtracks, and night ride cinematography that built a loyal community.',
+                'proj-2-btn': '<i class="fa-solid fa-play"></i> Watch Cinematic Video',
+                'exp-title': 'Experience & Education',
+                'exp-1-role': 'Lead Creative F&B Creator & TikTok Strategist',
+                'exp-1-desc': 'Designed aesthetic promo video concepts, conducted cafe hopping, and produced high-quality review content that drove hundreds of local followers to visit physically.',
+                'exp-2-role': 'Freelance Video Editor & Collaborator',
+                'exp-2-desc': 'Collaborated with local motorcycle communities and business owners for high-speed TikTok editing via CapCut, sound beat matching, and video optimization for FYP algorithms.',
+                'contact-title': 'Get In Touch',
+                'contact-subtitle': 'Let\'s Work Together!',
+                'contact-desc': 'Want your cafe packed with young coffee lovers, or want your motorcycle squad to look epic in viral TikTok cinematic clips? Reach out to me today!',
+                'form-label-name': 'Full Name',
+                'form-label-email': 'Email Address',
+                'form-label-msg': 'Your Message',
+                'form-ph-name': 'Enter your name',
+                'form-ph-email': 'name@email.com',
+                'form-ph-msg': 'Write your message here...',
+                'form-btn': 'Send Message',
+                'footer-text': '&copy; 2026 Farel Ridholi Vios. Built with creativity & visual passion.'
+            }
+        };
+
+        let currentLang = localStorage.getItem('lang') || 'id';
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            
+            const langCodeEl = document.getElementById('lang-code');
+            if (langCodeEl) {
+                langCodeEl.textContent = lang.toUpperCase();
+            }
+
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            const placeholders = document.querySelectorAll('[data-i18n-ph]');
+            placeholders.forEach(el => {
+                const key = el.getAttribute('data-i18n-ph');
+                if (translations[lang] && translations[lang][key]) {
+                    el.setAttribute('placeholder', translations[lang][key]);
+                }
+            });
+        }
+
+        let progressInterval = null;
+
+        function getTiktokVideo() {
+            return document.getElementById('tiktokVideo');
+        }
+
+        function getProgressBar() {
+            return document.getElementById('progressBar');
+        }
+
+        function getPlayIndicator() {
+            return document.getElementById('playIndicator');
+        }
+
+        function getSoundIcon() {
+            return document.getElementById('soundIcon');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateLanguage(currentLang);
+
+            const langToggleBtn = document.getElementById('lang-toggle');
+            if (langToggleBtn) {
+                langToggleBtn.addEventListener('click', () => {
+                    const newLang = currentLang === 'id' ? 'en' : 'id';
+                    updateLanguage(newLang);
+                });
+            }
+
+            // 1. Mobile Menu Toggle
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const navLinksItems = document.querySelectorAll('.nav-link');
+            
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    const icon = hamburger.querySelector('i');
+                    if(icon) {
+                        if(navLinks.classList.contains('active')) {
+                            icon.className = 'fa-solid fa-xmark';
+                        } else {
+                            icon.className = 'fa-solid fa-bars';
+                        }
+                    }
+                });
+
+                navLinksItems.forEach(item => {
+                    item.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        const icon = hamburger.querySelector('i');
+                        if (icon) {
+                            icon.className = 'fa-solid fa-bars';
+                        }
+                    });
+                });
+            }
+
+            // 2. Dark/Light Mode Theme Toggle
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const htmlEl = document.documentElement;
+            
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                htmlEl.setAttribute('data-theme', savedTheme);
+                updateThemeIcon(savedTheme);
+            }
+
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', () => {
+                    const currentTheme = htmlEl.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                    
+                    htmlEl.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateThemeIcon(newTheme);
+                });
+            }
+
+            function updateThemeIcon(theme) {
+                if (!themeIcon) return;
+                if (theme === 'dark') {
+                    themeIcon.className = 'fa-solid fa-sun';
+                } else {
+                    themeIcon.className = 'fa-solid fa-moon';
+                }
+            }
+
+            // 3. Scroll Animations (Intersection Observer)
+            const fadeUpElements = document.querySelectorAll('.fade-up');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            fadeUpElements.forEach(el => observer.observe(el));
+
+            // 4. Active Nav Link on Scroll
+            const sections = document.querySelectorAll('section');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (window.scrollY >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinksItems.forEach(a => {
+                    a.classList.remove('active');
+                    if (a.getAttribute('href').includes(current)) {
+                        a.classList.add('active');
+                    }
+                });
+            });
+
+            // 5. Form Validation & Submission
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+
+            if (contactForm && formMessage) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+
+                    if (!name || !email || !message) {
+                        formMessage.textContent = 'Harap isi semua kolom.';
+                        formMessage.className = 'form-message error';
+                        return;
+                    }
+
+                    formMessage.textContent = 'Pesan Anda berhasil terkirim! Saya akan segera menghubungi Anda.';
+                    formMessage.className = 'form-message success';
+                    contactForm.reset();
+
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                        formMessage.className = 'form-message';
+                    }, 5000);
+                });
+            }
+
+            // 6. Keyboard Listener
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeVideoModal();
+                }
+            });
+        });
+
+        // Interactive Video Modal Functions
+        window.openVideoModal = function(src, username, description, music, likes, comments, bookmarks, shares) {
+            const modal = document.getElementById('videoModal');
+            const video = getTiktokVideo();
+            const source = document.getElementById('videoSource');
+            
+            if (modal) {
+                modal.classList.add('active');
+            }
+            if (source) {
+                source.src = src;
+                if (video) video.load();
+            }
+            if (video) {
+                video.play().catch(e => console.log('Video playback status:', e));
+            }
+            document.body.style.overflow = 'hidden';
+            
+            // Populate content
+            const usernameEl = document.getElementById('tiktokUsername');
+            if (usernameEl) usernameEl.textContent = username;
+            
+            const descEl = document.getElementById('tiktokDesc');
+            if (descEl) descEl.textContent = description;
+            
+            const musicEl = document.getElementById('tiktokMusicText');
+            if (musicEl) musicEl.textContent = music;
+
+            const likesEl = document.getElementById('tiktokLikes');
+            if (likesEl) likesEl.textContent = likes;
+
+            const commentsEl = document.getElementById('tiktokComments');
+            if (commentsEl) commentsEl.textContent = comments;
+
+            const bookmarksEl = document.getElementById('tiktokBookmarks');
+            if (bookmarksEl) bookmarksEl.textContent = bookmarks;
+
+            const sharesEl = document.getElementById('tiktokShares');
+            if (sharesEl) sharesEl.textContent = shares;
+
+            if (progressInterval) clearInterval(progressInterval);
+            progressInterval = setInterval(updateProgressBar, 100);
+        };
+
+        window.closeVideoModal = function() {
+            const modal = document.getElementById('videoModal');
+            const video = getTiktokVideo();
+            
+            if (modal) {
+                modal.classList.remove('active');
+            }
+            document.body.style.overflow = '';
+            
+            if (video) {
+                video.pause();
+            }
+            clearInterval(progressInterval);
+        };
+
+        window.closeVideoModalOnBackdrop = function(e) {
+            if (e.target.id === 'videoModal') {
+                closeVideoModal();
+            }
+        };
+
+        window.togglePlayPause = function() {
+            const video = getTiktokVideo();
+            if (!video) return;
+
+            if (video.paused) {
+                video.play();
+                showPlayIndicator(false);
+            } else {
+                video.pause();
+                showPlayIndicator(true);
+            }
+        };
+
+        window.toggleSound = function(event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            
+            const video = getTiktokVideo();
+            if (!video) return;
+
+            video.muted = !video.muted;
+            updateSoundButtonIcon(video.muted);
+        };
+
+        function updateSoundButtonIcon(isMuted) {
+            const icon = getSoundIcon();
+            if (!icon) return;
+            if (isMuted) {
+                icon.className = "fa-solid fa-volume-xmark";
+            } else {
+                icon.className = "fa-solid fa-volume-high";
+            }
+        }
+
+        function showPlayIndicator(isPaused) {
+            const indicator = getPlayIndicator();
+            if (!indicator) return;
+            
+            if (isPaused) {
+                indicator.innerHTML = '<i class="fa-solid fa-play"></i>';
+                indicator.classList.add('trigger');
+            } else {
+                indicator.innerHTML = '<i class="fa-solid fa-pause"></i>';
+                indicator.classList.add('trigger');
+                setTimeout(() => {
+                    indicator.classList.remove('trigger');
+                }, 500);
+            }
+        }
+
+        function updateProgressBar() {
+            const video = getTiktokVideo();
+            const bar = getProgressBar();
+            if (video && video.duration && bar) {
+                const percentage = (video.currentTime / video.duration) * 100;
+                bar.style.width = percentage + '%';
+            }
+        }
+
+        window.toggleLike = function(btn) {
+            if (!btn) return;
+            btn.classList.toggle('liked');
+            const likeText = btn.querySelector('.like-count');
+            if (likeText) {
+                const currentLikes = parseFloat(likeText.textContent);
+                if (btn.classList.contains('liked')) {
+                    likeText.textContent = (currentLikes + 0.1).toFixed(1) + 'K';
+                } else {
+                    likeText.textContent = (currentLikes - 0.1).toFixed(1) + 'K';
+                }
+            }
+        };
+    </script>
+</body>
+</html>
